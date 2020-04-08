@@ -13,7 +13,7 @@ Here is a tracker for each task we have to do.
 | --------------------|:----------:|:----------------:|
 | Dimensions CAO      |Jules       |:heavy_check_mark:|
 | Dynamic Modelization|Quentin     |:heavy_check_mark:|
-| Joint Configuration |Gwendal     |:recycle:         |
+| Joint Configuration |Gwendal     |:heavy_check_mark:|
 | Mesh Importing      |Jacques     |:x:               |
 | Lua/ROS interface   |Paul-Antoine|:x:               |
 
