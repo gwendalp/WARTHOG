@@ -7,13 +7,14 @@ This repository is a V-REP simulation of the ClearPath Robotics Warthdog robot. 
 ## :barber: Tracker :barber:
 Here is a tracker for each task we have to do.
 
-| Task                |Responsible | Progression      |
-| --------------------|:----------:|:----------------:|
-| Dimensions CAO      |Jules       |:heavy_check_mark:|
-| Dynamic Modelization|Quentin     |:heavy_check_mark:|
-| Joint Configuration |Gwendal     |:heavy_check_mark:|
-| Mesh Importing      |Jacques     |:x:               |
-| Lua/ROS interface   |Paul-Antoine|:x:               |
+| Task                   |Responsible | Progression      |
+| -----------------------|:----------:|:----------------:|
+| Dimensions CAO         |Jules       |:heavy_check_mark:|
+| Dynamic Modelization   |Quentin     |:heavy_check_mark:|
+| Joint Configuration    |Gwendal     |:heavy_check_mark:|
+| Mesh Importing         |Jacques     |:x:               |
+| Lua/ROS interface      |Paul-Antoine|:x:               |
+| Test on damaged terrain|            |:x:               |
 
 
 ## CAO
