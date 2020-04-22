@@ -1,7 +1,5 @@
 # WARTHOG
 
-<<<<<<< HEAD
-=======
 ## Introduction
 
 This repository is a V-REP simulation of the ClearPath Robotics Warthdog robot. This robot is an **U**nmanned **G**round **V**ehicle (**UGV**)  robot which is amphibious. It's a large all-terrain unmanned ground vehicle capable of traveling on land and in water. Both documentation and additionnal informations are available at [ClearPath Robotics Warthdog](https://clearpathrobotics.com/warthog-unmanned-ground-vehicle-robot/).
@@ -9,13 +7,14 @@ This repository is a V-REP simulation of the ClearPath Robotics Warthdog robot. 
 ## :barber: Tracker :barber:
 Here is a tracker for each task we have to do.
 
-| Task                |Responsible | Progression      |
-| --------------------|:----------:|:----------------:|
-| Dimensions CAO      |Jules       |:heavy_check_mark:|
-| Dynamic Modelization|Quentin     |:heavy_check_mark:|
-| Joint Configuration |Gwendal     |:heavy_check_mark:|
-| Mesh Importing      |Jacques     |:x:               |
-| Lua/ROS interface   |Paul-Antoine|:x:               |
+| Task                   |Responsible | Progression      |
+| -----------------------|:----------:|:----------------:|
+| Dimensions CAO         |Jules       |:heavy_check_mark:|
+| Dynamic Modelization   |Quentin     |:heavy_check_mark:|
+| Joint Configuration    |Gwendal     |:heavy_check_mark:|
+| Mesh Importing         |Jacques     |:x:               |
+| Lua/ROS interface      |Paul-Antoine|:x:               |
+| Test on damaged terrain|            |:x:               |
 
 
 ## CAO
@@ -54,5 +53,5 @@ We now have to configure joint on our robot. There is one revolute joint for eac
 ## License
 
 This project is licensed under the GNU General Public License v3.0 - see the [LICENSE.md](LICENSE.md) file for details
->>>>>>> 91486b41eb7da0a3413a4f702ec1a09fc64486b4
+
 

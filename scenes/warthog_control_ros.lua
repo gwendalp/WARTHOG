@@ -1,60 +1,26 @@
 function subscriber_cmd_left_front_callback(msg)
-   -- This is the subscriber callback function when receiving /cmd_vel  topic
-   -- The msg is a Lua table defining linear and angular velocities
-   --   linear velocity along x = msg["linear"]["x"]
-   --   linear velocity along y = msg["linear"]["y"]
-   --   linear velocity along z = msg["linear"]["z"]
-   --   angular velocity along x = msg["angular"]["x"]
-   --   angular velocity along y = msg["angular"]["y"]
-   --   angular velocity along z = msg["angular"]["z"]
    spdLin = msg["data"]
-   
    sim.setJointTargetVelocity(Motor1, spdLin)
-   
-   sim.addStatusbarMessage(' subscriber receiver : spdLin ='..spdLin..'')
+   sim.addStatusbarMessage('cmd_left_front subscriber receiver : spdLin ='..spdLin..'')
 end
 
 function subscriber_cmd_left_rear_callback(msg)
-  
    spdLin = msg["data"]
-   
    sim.setJointTargetVelocity(Motor2, spdLin)
-   
-   sim.addStatusbarMessage(' subscriber receiver : spdLin ='..spdLin..'')
+   sim.addStatusbarMessage('cmd_left_front subscriber receiver : spdLin ='..spdLin..'')
 end
 
 function subscriber_cmd_right_front_callback(msg)
-  -- This is the subscriber callback function when receiving /cmd_vel  topic
-   -- The msg is a Lua table defining linear and angular velocities
-   --   linear velocity along x = msg["linear"]["x"]
-   --   linear velocity along y = msg["linear"]["y"]
-   --   linear velocity along z = msg["linear"]["z"]
-   --   angular velocity along x = msg["angular"]["x"]
-   --   angular velocity along y = msg["angular"]["y"]
-   --   angular velocity along z = msg["angular"]["z"]
    spdLin = msg["data"]
-   
    sim.setJointTargetVelocity(Motor3, spdLin)
-   
-   sim.addStatusbarMessage(' subscriber receiver : spdLin ='..spdLin..'')
+   sim.addStatusbarMessage('cmd_left_front subscriber receiver : spdLin ='..spdLin..'')
 end
 
 function subscriber_cmd_right_rear_callback(msg)
-  -- This is the subscriber callback function when receiving /cmd_vel  topic
-   -- The msg is a Lua table defining linear and angular velocities
-   --   linear velocity along x = msg["linear"]["x"]
-   --   linear velocity along y = msg["linear"]["y"]
-   --   linear velocity along z = msg["linear"]["z"]
-   --   angular velocity along x = msg["angular"]["x"]
-   --   angular velocity along y = msg["angular"]["y"]
-   --   angular velocity along z = msg["angular"]["z"]
    spdLin = msg["data"]
-   
    sim.setJointTargetVelocity(Motor4, spdLin)
-   
-   sim.addStatusbarMessage(' subscriber receiver : spdLin ='..spdLin..'')
-end
-
+   sim.addStatusbarMessage('cmd_left_front subscriber receiver : spdLin ='..spdLin..'')
+ 
 function getPose(objectName)
    -- This function get the object pose at ROS format geometry_msgs/Pose
    objectHandle=sim.getObjectHandle(objectName)
