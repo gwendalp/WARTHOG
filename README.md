@@ -43,6 +43,13 @@ Because the processing of too complex shapes can be very difficult, we have to m
 
 We now have to configure joint on our robot. There is one revolute joint for each of the four wheel, and one revolute joint between each of the two buggy and the main chassis. So we have six revolute joint to configure. Then we need to motorized each wheel's joint and to let free the others. Finally, we added springs between the two buggys and the main chassis in order to bring the chassis back upright. 
 
+
+## Buoyancy
+
+We created a scene which simulates in the water. 
+
+[![video](https://github.com/gwendalp/kart/blob/master/doc/rapport/Images/buoyancy.gif)]
+
 ## Authors
 
 * **Jules Berhault** - 
