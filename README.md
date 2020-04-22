@@ -9,7 +9,7 @@ Here is a tracker for each task we have to do.
 
 | Task                   |Responsible | Progression      |
 | -----------------------|:----------:|:----------------:|
-| Dimensions CAO         |Jules       |:heavy_check_mark:|
+| CAO                    |Jules       |:heavy_check_mark:|
 | Dynamic Modelization   |Quentin     |:heavy_check_mark:|
 | Joint Configuration    |Gwendal     |:heavy_check_mark:|
 | Mesh Importing         |Jacques     |:x:               |
@@ -42,6 +42,13 @@ Because the processing of too complex shapes can be very difficult, we have to m
 ## Joint Configuration
 
 We now have to configure joint on our robot. There is one revolute joint for each of the four wheel, and one revolute joint between each of the two buggy and the main chassis. So we have six revolute joint to configure. Then we need to motorized each wheel's joint and to let free the others. Finally, we added springs between the two buggys and the main chassis in order to bring the chassis back upright. 
+
+
+## Buoyancy
+
+We created a scene which simulates in the water. 
+
+[![video](https://github.com/gwendalp/WARTHOG/blob/master/docs/images/buoyancy.gif)]
 
 ## Authors
 
