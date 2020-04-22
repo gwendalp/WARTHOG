@@ -67,10 +67,10 @@ function sysCall_init()
    if rosInterfacePresent then
       publisher1=simROS.advertise('/simulationTime','std_msgs/Float32')
       publisher2=simROS.advertise('/pose','geometry_msgs/Pose')
-      subscriber1=simROS.subscribe('/cmd_left_front','std_msgs/Float32','subscriber_cmd_left_front_callback')
-      subscriber2=simROS.subscribe('/cmd_left_rear','std_msgs/Float32','subscriber_cmd_left_rear_callback')
-      subscriber3=simROS.subscribe('/cmd_right_front','std_msgs/Float32','subscriber_cmd_right_front_callback')
-      subscriber4=simROS.subscribe('/cmd_right_rear','std_msgs/Float32','subscriber_cmd_right_rear_callback')
+      subscriber1=simROS.subscribe('/cmd_left_front','std_msgs/Float64','subscriber_cmd_left_front_callback')
+      subscriber2=simROS.subscribe('/cmd_left_rear','std_msgs/Float64','subscriber_cmd_left_rear_callback')
+      subscriber3=simROS.subscribe('/cmd_right_front','std_msgs/Float64','subscriber_cmd_right_front_callback')
+      subscriber4=simROS.subscribe('/cmd_right_rear','std_msgs/Float64','subscriber_cmd_right_rear_callback')
    end
 end
  

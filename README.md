@@ -46,9 +46,16 @@ We now have to configure joint on our robot. There is one revolute joint for eac
 
 ## Buoyancy
 
-We created a scene which simulates in the water. 
+We created a scene which simulates the buoyancy of the warthog in the water. 
 
 [![video](https://github.com/gwendalp/WARTHOG/blob/master/docs/images/buoyancy.gif)]
+
+## V-REP 
+
+The WARTHOG is controlled in V-REP with ROS
+
+
+[![video](https://github.com/gwendalp/WARTHOG/blob/master/docs/images/warthog.gif)](https://youtu.be/YT_t-u7yGwk "video")
 
 ## Authors
 
