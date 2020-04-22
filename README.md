@@ -48,7 +48,7 @@ We now have to configure joint on our robot. There is one revolute joint for eac
 
 We created a scene which simulates in the water. 
 
-[![video](https://github.com/gwendalp/kart/blob/master/doc/rapport/Images/buoyancy.gif)]
+[![video](https://github.com/gwendalp/WARTHOG/blob/master/docs/images/buoyancy.gif)]
 
 ## Authors
 
