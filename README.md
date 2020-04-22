@@ -13,7 +13,7 @@ Here is a tracker for each task we have to do.
 | Dynamic Modelization   |Quentin     |:heavy_check_mark:|
 | Joint Configuration    |Gwendal     |:heavy_check_mark:|
 | Mesh Importing         |Jacques     |:x:               |
-| Lua/ROS interface      |Paul-Antoine|:x:               |
+| Lua/ROS interface      |Paul-Antoine|:heavy_check_mark:|              |
 | Test on damaged terrain|            |:x:               |
 
 

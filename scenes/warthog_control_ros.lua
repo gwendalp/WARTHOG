@@ -20,7 +20,8 @@ function subscriber_cmd_right_rear_callback(msg)
    spdLin = msg["data"]
    sim.setJointTargetVelocity(Motor4, spdLin)
    sim.addStatusbarMessage('cmd_left_front subscriber receiver : spdLin ='..spdLin..'')
- 
+end 
+
 function getPose(objectName)
    -- This function get the object pose at ROS format geometry_msgs/Pose
    objectHandle=sim.getObjectHandle(objectName)
