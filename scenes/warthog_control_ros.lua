@@ -61,7 +61,15 @@ function sysCall_init()
    Motor2 = sim.getObjectHandle("back_left_joint")
    Motor3 = sim.getObjectHandle("front_right_joint")
    Motor4 = sim.getObjectHandle("back_right_joint")
-   
+
+   h=sim.getObjectAssociatedWithScript(sim.handle_self)
+   m=sim.getShapeMassAndInertia(h)
+   local r,dmin=sim.getObjectFloatParameter(h,sim.objfloatparam_objbbox_min_z)
+   local r,dmax=sim.getObjectFloatParameter(h,sim.objfloatparam_objbbox_max_z)
+   radius=(dmax-dmin)*2
+   waterLevel=-0 -- water at z-coordinate 0
+   dragCoeff=1000
+
    rosInterfacePresent=simROS
    -- Prepare the publishers and subscribers :
    if rosInterfacePresent then
@@ -76,6 +84,14 @@ end
  
 function sysCall_actuation()
    -- Send an updated simulation time message, and send the transform of the object attached to this script:
+   local p=sim.getObjectPosition(h,-1)
+   local t=(waterLevel-p[3]+radius)/(1*radius)
+   if t<0 then t=0 end
+   if t>2 then t=2 end
+   local accel=sim.getArrayParameter(sim.arrayparam_gravity)
+   local v=sim.getVelocity(h)
+   sim.addForceAndTorque(h,{1*(accel[1]*m*t-v[1]*dragCoeff),1*(accel[2]*m*t-v[2]*dragCoeff),(-accel[3]*m*t-v[3]*dragCoeff)*1})
+
    if rosInterfacePresent then
       -- publish time and pose topics
       simROS.publish(publisher1,{data=sim.getSimulationTime()})
