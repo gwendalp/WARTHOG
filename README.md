@@ -12,9 +12,11 @@ Here is a tracker for each task we have to do.
 | CAO                    |Jules       |:heavy_check_mark:|
 | Dynamic Modelization   |Quentin     |:heavy_check_mark:|
 | Joint Configuration    |Gwendal     |:heavy_check_mark:|
-| Mesh Importing         |Jacques     |:x:               |
-| Lua/ROS interface      |Paul-Antoine|:heavy_check_mark:|              |
-| Test on damaged terrain|            |:x:               |
+| Mesh Importing         |Jacques     |:heavy_check_mark:|
+| Lua/ROS interface      |Paul-Antoine|:heavy_check_mark:|
+| Buoyancy				 |Quentin	  |:heavy_check_mark:|
+| Test on damaged terrain|Gwendal     |:heavy_check_mark:|
+
 
 
 ## CAO
