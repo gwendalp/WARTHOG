@@ -66,7 +66,7 @@ https://www.youtube.com/watch?v=YT_t-u7yGwk
 https://www.youtube.com/watch?v=WxgSTA-ixdk
 
 ## How to run the simulation
-
+Download **CoppeliaSim Edu V4.0.0 rev4** : https://coppeliarobotics.com/downloads
 Put the directory *warthog_ros*, in your *workspaceRos*.
 
 ```bash
@@ -75,7 +75,8 @@ roscore
 rosrun warthog controller_node.py
 rosrun key_teleop key_teleop.py key_vel:=cmd_vel
 ```
-You can now move the robot with your keyboard. Go in the water. 
+You must run the simulation by clicking on the play button on the top-right of the window.
+You can now move the robot with your keyboard. And test the WARTHOG in the sea. 
 
 
 ## Authors
