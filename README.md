@@ -57,11 +57,24 @@ The WARTHOG is controlled in V-REP with ROS
 
 [![video](https://github.com/gwendalp/WARTHOG/blob/master/docs/images/warthog.gif)](https://youtu.be/YT_t-u7yGwk "video")
 
-Here are the video :
+Here are the video links :
 
 https://www.youtube.com/watch?v=YT_t-u7yGwk
 
 https://www.youtube.com/watch?v=WxgSTA-ixdk
+
+## How to run the simulation
+
+Put the directory *warthog_ros*, in your *workspaceRos*.
+
+```bash
+roscore
+./vrep.sh warthog.ttt
+rosrun warthog controller_node.py
+rosrun key_teleop key_teleop.py key_vel:=cmd_vel
+```
+You can now move the robot with your keyboard. Go in the water. 
+
 
 ## Authors
 
