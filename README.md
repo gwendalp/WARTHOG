@@ -57,6 +57,12 @@ The WARTHOG is controlled in V-REP with ROS
 
 [![video](https://github.com/gwendalp/WARTHOG/blob/master/docs/images/warthog.gif)](https://youtu.be/YT_t-u7yGwk "video")
 
+Here are the video :
+
+https://www.youtube.com/watch?v=YT_t-u7yGwk
+
+https://www.youtube.com/watch?v=WxgSTA-ixdk
+
 ## Authors
 
 * **Jules Berhault** - 
